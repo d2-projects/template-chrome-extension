@@ -11,12 +11,9 @@ export default {
 </script>
 
 <style>
-.chrome-extension-template-popup {
+.chrome-extension-template-newtab {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
