@@ -1,0 +1,43 @@
+{
+    "name": "插件开发模板",
+    "version": "1.2.3",
+    "manifest_version": 2,
+    "description": "替换为你的描述",
+    "icons": { 
+      "16": "image/icon/16@2x.png",
+      "48": "image/icon/48@2x.png",
+      "128": "image/icon/128@2x.png"
+    },
+    "options_page": "options.html",
+    "browser_action": {
+        "default_icon": "image/icon/browser_action@2x.png",
+        "default_title": "插件开发模板",
+        "default_popup": "popup.html"
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'; style-src 'self';",
+    "content_scripts": [{
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+        ],
+        "js": [
+            "js/content.js"
+        ],
+        "css": [
+            "css/content.css"
+        ],
+        "run_at": "document_end"
+    }],
+    "background": {
+        "scripts": [
+            "hot-reload.js",
+            "js/background.js"
+        ]
+    },
+    "permissions": [
+      "contextMenus"
+    ],
+    "web_accessible_resources": [
+        "fonts/*"
+    ]
+}
