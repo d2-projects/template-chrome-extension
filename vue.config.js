@@ -5,7 +5,7 @@ const path = require('path')
 // Generate pages object
 const pagesObj = {}
 
-const chromeName = ['popup', 'options']
+const chromeName = ['popup', 'options', 'newtab']
 
 chromeName.forEach(name => {
   pagesObj[name] = {
